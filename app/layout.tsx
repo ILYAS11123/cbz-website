@@ -5,6 +5,10 @@ import Link from 'next/link'
 export const metadata = {
   title: 'C.B.Z - نادي كرة السلة زاكورة',
   description: 'الموقع الرسمي لنادي كرة السلة زاكورة - الهوية، الإدارة ومركز المواجهات',
+  // 👇 هَا حْنَا زِدْنَا الكُودْ دْيَالْ جُوجَلْ هْنَا بْطَرِيقَة نْقِيَّة وِاحْتِرَافِيَّة
+  verification: {
+    google: '6a682787f8148130',
+  },
 }
 
 export default function RootLayout({
@@ -57,7 +61,7 @@ export default function RootLayout({
                 مركز المواجهات
               </Link>
               
-              {/* 🛠️ زر الإدارة (Admin) المخفي بذكاء - كاين غير الفوق دابا */}
+              {/* 🛠️ زر الإدارة (Admin) المخفي بذكاء */}
               <Link 
                 href="/admin" 
                 className="text-white/40 hover:text-white transition-opacity text-xs p-1"
@@ -79,7 +83,7 @@ export default function RootLayout({
 
         <main className="min-h-screen">{children}</main>
 
-        {/* Footer التحتاني نقي وما فيه حتى رابط للأدمن */}
+        {/* Footer التحتاني */}
         <footer className="bg-[#0B4028] text-gray-300 border-t-8 border-[#D4AF37] py-8 mt-12">
           <div className="container mx-auto max-w-5xl px-4 text-center space-y-4">
             <h3 className="font-black text-white text-lg">نادي كرة السلة زاكورة © 2026</h3>
