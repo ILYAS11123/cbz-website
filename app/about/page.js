@@ -14,7 +14,7 @@ export default function AboutPage() {
   const executive = [
     { role: "الكاتب العام", name: "عبد العلي حميدة", icon: "📝", img: "/team/abdelali_hamida.jfif", desc: "التنسيق الإداري، المراسلات الرسمية والتوثيق القانوني" },
     { role: "نائب الكاتب العام", name: "زينب باحفيظ", icon: "📋", img: "/team/zineb_bahfid.jpg", desc: "المعاونة الإدارية وتوثيق محاضر الاجتماعات والأنشطة" },
-    { role: "أمين المال", name: "الحسين أيت كحو", icon: "💼", img: "/team/team-photo.jpg.jpeg.jfif", desc: "التدبير المالي الدقيق والميزانية والموارد المالية للنادي" },
+    { role: "أمين المال", name: "الحسين أيت اكهو", icon: "💼", img: "/team/team-photo.jpg.jpeg.jfif", desc: "التدبير المالي الدقيق والميزانية والموارد المالية للنادي" },
     { role: "نائب أمين المال", name: "محمد امين ملكي", icon: "📉", img: "/team/mohamed_amine_malki.jfif", desc: "المراقبة المالية المساعدة والمتابعة المحاسباتية" }
   ];
 
