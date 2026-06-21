@@ -5,9 +5,9 @@ import Link from 'next/link'
 export const metadata = {
   title: 'C.B.Z - نادي كرة السلة زاكورة',
   description: 'الموقع الرسمي لنادي كرة السلة زاكورة - الهوية، الإدارة ومركز المواجهات',
-  // 👇 هَا حْنَا زِدْنَا الكُودْ دْيَالْ جُوجَلْ هْنَا بْطَرِيقَة نْقِيَّة وِاحْتِرَافِيَّة
+  // 👇 الكود الجديد والمغربي الصحيح لي عطاك جوجل دابا
   verification: {
-    google: '6a682787f8148130',
+    google: 'AcAdNKgo50lCXbyPltSG55tkEyYlSskTzvtHfWEue2c',
   },
 }
 
