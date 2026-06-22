@@ -18,26 +18,30 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-slate-50/50 pb-24 text-right antialiased selection:bg-[#0B4028] selection:text-white" dir="rtl">
       
-      {/* 1. قسم الواجهة الترحيبية الديناميكي (Hero Section) */}
-      <section className="relative bg-gradient-to-br from-[#0B4028] via-[#0f4d31] to-[#165c3b] text-white pt-24 pb-44 px-4 overflow-hidden border-b-4 border-[#D4AF37]">
-        <div className="absolute inset-0 opacity-5 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:20px_20px]"></div>
+      {/* 1. قسم الواجهة الترحيبية (Hero Section) - تم تعديله للأصفر والأخضر بنجاح */}
+      <section className="relative bg-[#D4AF37] text-[#0B4028] pt-24 pb-44 px-4 overflow-hidden border-b-4 border-[#0B4028]">
+        {/* النقاط الخلفية الجمالية بالأخضر فوق الأصفر */}
+        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#0B4028_1px,transparent_1px)] [background-size:20px_20px]"></div>
         
         <div className="container mx-auto max-w-4xl space-y-6 relative z-10 text-center">
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md text-[#D4AF37] border border-white/20 px-4 py-2 rounded-full font-bold text-xs shadow-sm">
+          {/* البادج الفوقاني متناسق بالأخضر */}
+          <div className="inline-flex items-center gap-2 bg-[#0B4028]/10 backdrop-blur-md text-[#0B4028] border border-[#0B4028]/20 px-4 py-2 rounded-full font-bold text-xs shadow-sm">
             <span>🏀</span> البوابة الرسمية لنادي C.B.Z
           </div>
           
-          <h1 className="text-4xl md:text-6xl font-black tracking-tight text-white leading-tight drop-shadow-md">
-            نادي كرة السلة <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] via-[#f3d065] to-[#D4AF37]">زاكورة</span>
+          {/* العنوان الكبير بالأخضر الكامل مع خط تحت كلمة زاكورة */}
+          <h1 className="text-4xl md:text-6xl font-black tracking-tight text-[#0B4028] leading-tight drop-shadow-sm">
+            نادي كرة السلة <span className="underline decoration-4 decoration-[#0B4028]">زاكورة</span>
           </h1>
           
-          <p className="text-emerald-50/90 max-w-2xl mx-auto text-base md:text-xl font-medium leading-relaxed">
+          {/* الوصف بالأخضر الداكن لضمان أعلى نسبة وضوح وقراءة فوق الأصفر */}
+          <p className="text-[#0B4028]/90 max-w-2xl mx-auto text-base md:text-xl font-bold leading-relaxed">
             تأسس النادي ليقود التميز الرياضي برؤية احترافية، ويمثل بفخر جهة درعة تافيلالت في منافسات كرة السلة الوطنية.
           </p>
         </div>
       </section>
 
-      {/* 📸 2. الحاوية العائمة لصورة الفريق الجمالية */}
+      {/* 📸 2. الحاوية العائمة لصورة الفريق الجمالية (محفوظة بالكامل) */}
       <section className="container mx-auto max-w-4xl px-4 -mt-28 relative z-20">
         <div className="bg-white p-3 rounded-[2.5rem] shadow-[0_25px_50px_-12px_rgba(11,64,40,0.12)] border border-slate-100 overflow-hidden">
           <div className="relative rounded-[2rem] overflow-hidden group shadow-inner bg-slate-100">
@@ -54,11 +58,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 📑 3. الكتلة الهندسية للبطاقة التقنية والمعلومات العامة (مطابقة للصورة تماماً) */}
+      {/* 📑 3. الكتلة الهندسية للبطاقة التقنية والمعلومات العامة */}
       <section className="container mx-auto max-w-5xl px-4 mt-20">
         <div className="bg-white rounded-[2.5rem] p-6 md:p-12 shadow-[0_15px_40px_rgba(0,0,0,0.02)] border border-slate-100/80 space-y-12">
           
-          {/* عنوان القسم محاذي باحترافية مع خط عمودي ملون */}
+          {/* عنوان القسم */}
           <div className="flex items-center gap-4 border-r-4 border-[#0B4028] pr-4">
             <div>
               <h2 className="text-2xl md:text-3.5xl font-black text-[#0B4028] tracking-tight">📊 الهوية التعريفية والبطاقة التقنية</h2>
@@ -66,7 +70,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* شبكة البطاقات العلوية الأربعة - زوايا ناعمة وتنسيق فخم */}
+          {/* شبكة البطاقات العلوية الأربعة */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
             {[
               { label: "الاسم الرسمي للنادي", value: "نادي كرة السلة زاكورة (C.B.Z)", style: "text-slate-800" },
@@ -81,7 +85,7 @@ export default function Home() {
             ))}
           </div>
 
-          {/* الموقف الإداري والاعتماد القانوني - مطابقة للأيقونات والـ Badges الخضراء بالصورة */}
+          {/* الموقف الإداري والاعتماد القانوني */}
           <div className="space-y-4 pt-2">
             <h3 className="font-black text-sm text-slate-700 flex items-center gap-2">
               <span className="text-[#0B4028] text-base">•</span> الوضعية الإدارية والاعتماد الجامعي:
@@ -99,7 +103,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* التقرير الاستثنائي - الخلفية الصفراء الخفيفة المحددة والراقية */}
+          {/* التقرير الاستثنائي الجغرافي */}
           <div className="bg-amber-50/40 rounded-2xl p-6 md:p-8 border border-amber-200/50 space-y-3 shadow-inner relative overflow-hidden">
             <h3 className="font-black text-base md:text-lg text-amber-900 flex items-center gap-2">
               📌 تقرير التوزيع الجغرافي ومظاهر التنافس الاستثنائية
