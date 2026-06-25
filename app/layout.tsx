@@ -2,11 +2,12 @@ import './globals.css'
 import React from 'react'
 import Link from 'next/link'
 
+// 🚀 إعدادات الـ SEO العامة للموقع وكود التحقق من Google Search Console
 export const metadata = {
   title: 'C.B.Z - نادي كرة السلة زاكورة',
-  description: 'الموقع الرسمي لنادي كرة السلة زاكورة - الهوية، الإدارة ومركز المواجهات',
+  description: 'الموقع الرسمي لنادي كرة السلة زاكورة (C.B.Z) - الهوية، الإدارة، ومركز المواجهات لممثل جهة درعة تافيلالت.',
   verification: {
-    google: 'AcAdNKgo50lCXbyPltSG55tkEyYlSskTzvtHfWEue2c',
+    google: 'AcAdNKgo50lCXbyPltSG55tkEyYlSskTzvtHfWEue2c', // كود التحقق شغال 100%
   },
 }
 
@@ -42,7 +43,7 @@ export default function RootLayout({
               </span>
             </Link>
 
-            {/* الروابط المتناسقة مع الخلفية الخضراء */}
+            {/* الروابط المتناسقة مع الخلفية الخضراء والتأثيرات الحركية */}
             <div className="flex flex-wrap items-center justify-center gap-4 lg:gap-7 font-bold text-xs md:text-sm">
               <Link href="/" className="text-white hover:text-[#D4AF37] transition-colors relative after:content-[''] after:absolute after:bottom-[-4px] after:right-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-[#D4AF37] after:transition-all">
                 الرئيسية
@@ -80,9 +81,10 @@ export default function RootLayout({
           </div>
         </nav>
 
+        {/* 📋 محتوى الصفحات الديناميكي */}
         <main className="min-h-screen">{children}</main>
 
-        {/* Footer التحتاني متناسق مع الهيدر بالأخضر */}
+        {/* 🏆 Footer التحتاني المتناسق بالكامل مع الهوية البصرية للنادي */}
         <footer className="bg-[#0B4028] text-gray-300 border-t-8 border-[#D4AF37] py-8 mt-12">
           <div className="container mx-auto max-w-5xl px-4 text-center space-y-4">
             <h3 className="font-black text-white text-lg">نادي كرة السلة زاكورة © 2026</h3>
